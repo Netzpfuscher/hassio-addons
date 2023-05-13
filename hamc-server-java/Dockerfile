@@ -29,7 +29,7 @@ RUN if [ -d /etc/cont-init.d ]; then chmod -R 755 /etc/cont-init.d; fi && \
 
 # Modules
 ARG MODULES="banner.sh options_to_env.sh"
-ARG SOURCE="https://raw.githubusercontent.com/williamcorsel/hassio-addons/master/.templates"
+ARG SOURCE="https://raw.githubusercontent.com/raizyr/hassio-addons/master/.templates"
 
 # Automatic modules download
 RUN if ! command -v bash >/dev/null 2>/dev/null; then (apt-get update && apt-get install -yqq --no-install-recommends bash || apk add --no-cache bash) >/dev/null; fi \
@@ -41,7 +41,7 @@ RUN if ! command -v bash >/dev/null 2>/dev/null; then (apt-get update && apt-get
 
 # Manual apps
 ENV PACKAGES=""
-ARG SOURCE="https://raw.githubusercontent.com/williamcorsel/hassio-addons/master/.templates"
+ARG SOURCE="https://raw.githubusercontent.com/raizyr/hassio-addons/master/.templates"
 
 # Automatic apps & bashio
 # hadolint ignore=SC2015
@@ -79,13 +79,13 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="williamcorsel (https://github.com/williamcorsel)" \
+    maintainer="raizyr (https://github.com/raizyr)" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Home Assistant Add-ons" \
-    org.opencontainers.image.authors="wiliamcorsel (https://github.com/williamcorsel)" \
+    org.opencontainers.image.authors="wiliamcorsel (https://github.com/raizyr)" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://github.com/williamcorsel" \
+    org.opencontainers.image.url="https://github.com/raizyr" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
