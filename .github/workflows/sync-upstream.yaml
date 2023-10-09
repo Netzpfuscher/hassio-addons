@@ -1,0 +1,20 @@
+---
+name: Rebase Upstream
+
+on:
+  schedule:
+  - cron: '0 0 * * 0' # once a week
+  workflow_dispatch: # manually
+
+env:
+  upstream: git@github.com:williamcorsel/hassio-addons.git
+
+
+jobs:
+  upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.0
+        with:
+          fetch-depth: 10
+      - uses: imba-tjd/rebase-upstream-action@0.5
