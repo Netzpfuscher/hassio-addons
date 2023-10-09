@@ -9,6 +9,7 @@ on:
 env:
   FETCH_DEPTH: 10
   PUSH: true
+  GH_TOKEN: ${{ github.token }}
 
 jobs:
   upstream:
