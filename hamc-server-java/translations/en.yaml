@@ -1,0 +1,98 @@
+configuration:
+  TYPE:
+    name: Server Type
+    description: |
+      The type of server to run. Available values are found at https://docker-minecraft-server.readthedocs.io/en/latest/types-and-platforms/
+  VERSION:
+    name: Minecraft Version
+    description: |
+      The version of Minecraft to run. If set to LATEST, the latest version will be used.
+  SERVER_NAME:
+    name: Server Name
+    description: |
+      The server name is used in the server list.
+  MOTD:
+    name: Message of the Day
+    description: |
+      Set the server's login message.
+  LEVEL:
+    name: Level Name
+    description: |
+      The value is used as the world name and its folder name.
+  MODE:
+    name: Game Mode
+    description: |
+      Minecraft servers are configured to run in Survival mode by default.
+      You can change the default mode using the values:
+  FORCE_GAMEMODE:
+    name: Force Game Mode
+    description: |
+      Force players to join in the default game mode.
+  DIFFICULTY:
+    name: Difficulty
+    description: |
+      The difficulty level. Available values:
+  HARDCORE:
+    name: Hardcore
+    description: |
+      If set to true, players will be set to spectator mode if they die.
+  MAX_PLAYERS:
+    name: Max Players
+    description: |
+      The maximum number of players that can join the server.
+  WHITELIST:
+    name: Allowlist
+    description: |
+      A list of usernames and/or UUIDs separated by comma
+  OPS:
+    name: Operators
+    description: |
+      A list of usernames and/or UUIDs separated by comma that will have operator permissions.
+  SPAWN_PROTECTION:
+    name: Spawn Protection
+    description: |
+      Sets the area that non-ops can not edit (0 to disable)
+  PVP:
+    name: PvP
+    description: |
+      By default, servers are created with player-vs-player (PVP) mode enabled.
+  MAX_WORLD_SIZE:
+    name: Max World Size
+    description: |
+      The maximum possible size in blocks, expressed as a radius.
+  ALLOW_NETHER:
+    name: Allow Nether
+    description: |
+      Allows players to travel to the Nether.
+  SEED:
+    name: Seed
+    description: |
+      Sets the seed to create the Minecraft world.
+  VIEW_DISTANCE:
+    name: View Distance
+    description: |
+      Sets the amount of world data the server sends the client, measured in chunks in each direction of the player (radius, not diameter). It determines the server-side viewing distance.
+  ONLINE_MODE:
+    name: Online Mode
+    description: |
+      By default, server checks connecting players against Minecraft's account database. If you want to create an offline server or your server is not connected to the internet, you can disable the server to try connecting to minecraft.net to authenticate players
+  MEMORY:
+    name: Memory
+    description: |
+      Declares an initial and maximum Java memory-heap limit. The default is 1G.
+  ANNOUNCE_PLAYER_ACHIEVEMENTS:
+    name: Announce Player Achievements
+    description: |
+      Allows server to announce when a player gets an achievement.
+  ENABLE_COMMAND_BLOCK:
+    name: Enable Command Block
+    description: |
+      If set to true, command blocks will be enabled in the server.
+  MAX_BUILD_HEIGHT:
+    name: Max Build Height
+    description: |
+      The maximum height in which building is allowed. Defaults to 256.
+  CF_API_KEY:
+    name: CurseForge API Key
+    description: |
+      The CurseForge API key is used to download mods from CurseForge.
