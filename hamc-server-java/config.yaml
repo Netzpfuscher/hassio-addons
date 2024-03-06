@@ -1,6 +1,6 @@
 name: Home Assistant Minecraft Server Java
 description: Host a Java Minecraft server on Home Assistant
-version: 1.0.1-debug
+version: 1.0.1-rc4
 slug: hamc-java
 init: false
 arch:
@@ -53,7 +53,6 @@ map:
   - addons:rw
   - addon_config:rw
 environment:
-  DEBUG: "true"  
   EULA: "TRUE"
   COPY_PLUGINS_SRC: "/config/plugins"
   COPY_MODS_SRC: "/config/mods"
