@@ -52,6 +52,7 @@ schema:
 map:
   - addons:rw
   - addon_config:rw
+  - share:rw
 environment:
   EULA: "TRUE"
   COPY_PLUGINS_SRC: "/config/plugins"
