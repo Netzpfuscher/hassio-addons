@@ -58,3 +58,4 @@ environment:
   COPY_PLUGINS_SRC: "/config/plugins"
   COPY_MODS_SRC: "/config/mods"
   COPY_CONFIG_SRC: "/config/config"
+  FTB_DIR: "/config/config"
