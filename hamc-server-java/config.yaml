@@ -11,6 +11,9 @@ ports:
   25565/tcp: "25565"
 ports_description:
   25565/tcp: Minecraft Server Port
+volumes:
+      # attach a directory relative to the directory containing this compose file
+      - ./minecraft-data:/data
 options:
   TYPE: VANILLA
   VERSION: LATEST
