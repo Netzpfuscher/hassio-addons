@@ -2,11 +2,11 @@
 
 bashio::log.info "Starting..."
 
-if [ ! -d "/share/minecraft/maps" ]; then
-  mkdir -p /share/minecraft/maps
+if [ ! -d "/share/minecraft/" ]; then
+  mkdir -p /share/minecraft/
 fi
-rm -rf /data/maps
+rm -rf /data/
 
-ln -s /share/minecraft/maps /data/maps
+ln -s /share/minecraft /data
 
 /start
