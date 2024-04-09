@@ -50,6 +50,7 @@ schema:
   CURSEFORGE_FILES: str?
   EXTRA_ARGS: str?
   EXISTING_WHITELIST_FILE: str?
+  EXISTING_OPS_FILE: str?
 
 map:
   - addons:rw
