@@ -9,6 +9,6 @@ rm -rf /data/maps
 
 ln -s /share/minecraft /data/maps
 
-chmod ugo+rwx /share/minecraft
+chmod -R ugo+rwx /share/minecraft
 
 /start
