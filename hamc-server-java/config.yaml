@@ -48,7 +48,7 @@ schema:
   MAX_BUILD_HEIGHT: int?
   CF_API_KEY: str?
   CURSEFORGE_FILES: str?
-  FTB_DIR: str?
+  EXTRA_ARGS: str?
 
 map:
   - addons:rw
