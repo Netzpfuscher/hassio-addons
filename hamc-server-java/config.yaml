@@ -9,8 +9,10 @@ arch:
   - armv7
 ports:
   25565/tcp: "25565"
+  25575/tcp: "25575"
 ports_description:
   25565/tcp: Minecraft Server Port
+  25575/tcp: Minecraft RCON
 options:
   TYPE: VANILLA
   VERSION: LATEST
